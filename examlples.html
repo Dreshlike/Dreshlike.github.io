@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>jQuery One Page Scroll by Pete R. | The Pete Design</title>
+
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+  <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <script>
+    $(document).ready(function() {
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="main">
+      <section class="page1">
+        <div class="container text-center pt-30">
+          <div class="display-2">ПОРТФОЛИО</div>
+          <div class="display-4 pt-3">ПОСМОТРИ НА ЧТО Я СПОСОБЕН</div>
+          <img src="photo-1545647274-96644da34367.jpg" alt="" style="height: 15%; width: 15%;" class="pt-3">
+        </div>
+      </section>
+      <section class="page2">
+        <img src="photo-1545647274-96644da34363.jpg" alt="">
+      </section>
+
+      <section class="page3">
+        <img src="photo-1545647274-96644da34364.jpg" alt="">
+      </section>
+
+      <section class="page4">
+        <img src="photo-1545647274-96644da34365.jpg" alt="">
+      </section>
+      <section class="page5">
+        <img src="photo-1545647274-96644da34366.jpg" alt="">
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>
