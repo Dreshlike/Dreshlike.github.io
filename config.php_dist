@@ -1,47 +1,41 @@
 <?php
 // Настройки
 $settings = array(
-	// Ключ для доступа к API
-	'user_api_key' => '',
+	// Адрес сервера MySQL
+	'dbhost' => '127.0.0.1',
+        
+	// Пользователь на сервере MySQL
+	'dbuser' => 'root',
+        
+	// Пароль пользователя на сервере MySQL
+	'dbpass' => '',
+        
+	// Имя базы данных MySQL
+	'dbname' => 'test',
+
+	// Использовать ли устойчивые соединения? Не все хостинги поддерживают эту опцию.
+	// Включение этой опции немного ускоряет работу с БД, однако если начинают появляться ошибки 
+	// "mysql gone away" то лучше выключить эту опцию
+	'db_pconnect' => FALSE,
+
+
 	// Хэш для построения диплинков
-	'user_deep_link_hash' => '',
+	'deep_link_hash' => '2758cb1abe0c8b601e179bfb46eb1f82',
 	
 	// Количество товаров на странице
 	'items_per_page' => 15,
 	
-	// Количество товаров в RSS-ленте
-	'rss_items_count' => 15,
-	
-	// Минимальная цена товара
-	'price_min' => 0.0,
-	// Максимальная цена товара
-	'price_max' => 1000000.0,
-	
 	// Название нашего сайта
-	'site_name' => 'Universe of goods',
+	'site_name' => 'Best Sale Shop',
 	
-	// Язык описаний товаров (может быть en или ru)
+	// Язык сайта
 	'lang' => 'en',
-	
-	// Желаемая валюта
-	// Поддерживаются как минимум USD, EUR, RUR, UAH, KZT. Подробнее - в документации
+
+	// Валюта
 	'currency' => 'USD',
-	
-	// Используемая библиотека кэширования
-	// Если есть поддержка на хостинге то крайне рекоммендуется включить
-	// Возможные значения: none, apc, mysql, xcache, memcache, memcached, wincache
-	'cache_library' => 'none',
-	
-	// Только если в качестве кэша выбран memcache или memcached
-	'memcached_host' => '127.0.0.1',
-	'memcached_port' => 11211,
-	'memcached_pconnect' => TRUE,
-	
-	// Настройки MySQL. Используются если в качестве кэша указан mysql
-	'mysql_host' => '127.0.0.1',
-	'mysql_user' => 'root',
-	'mysql_pass' => '',
-	'mysql_base' => 'test',
-	'mysql_persist' => FALSE,
+
+	// Логин и пароль для админки
+	'admin_login' => 'admin',
+	'admin_password' => 'p4ssw0rd',
 );
 
