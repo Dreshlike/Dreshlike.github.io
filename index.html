@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Портфолио</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="assets/jquery.iMissYou.min.js"></script>
+		<script>
+			jQuery(document).ready(function($){
+				$.iMissYou({
+					title: "Вернись и досмотри!",
+					favicon: {
+						enabled: false,
+						src:'iMissYouFavicon.ico'
+					}
+				});
+			});
+		</script>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Никита Кулешов</h1>
+						<p>Frontend разработчик &nbsp;&bull;&nbsp; Дизайнер &nbsp;&bull;&nbsp; И вообще классный парень</p>
+						<nav>
+							<ul>
+								<li><a href="https://t.me/NokZKH" class="icon brands fa-telegram"><span class="label">Telegram</span></a></li>
+								<li><a href="https://vk.com/nikitos1998ek" class="icon brands fa-vk"><span class="label">VK</span></a></li>
+								<li><a href="projects" class="icon brands fa-html5"><span class="label">Dribbble</span></a></li>
+								<li><a href="https://github.com/Dreshlike" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							</ul>
+						</nav>
+					</header>
+
+
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>
